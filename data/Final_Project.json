@@ -1,0 +1,379 @@
+{
+
+    "items": [
+
+        {
+
+            "id": "1",
+
+            "title": "Ruins of the Great East Japan Earthquake Kesennuma City Memorial Museum Guidebook.",
+
+            "creator/publisher": "Ruins of the Great East Japan Earthquake Kesennuma City Memorial Museum",
+
+            "description": "A pamphlet containing a map and other information about the museum.",
+
+	    "subject": [ "museum", "memorial", "tourism" ],
+
+	    "location": "Kesennuma",
+
+	    "date": "2019",
+
+            "language": "English",
+
+            "type": "pamphlet",
+
+
+            "media_file": [ 
+		{
+			"title":"1",
+			"src": "images/kesennuma_museum_brochure_1.jpg"
+		}, {
+			"title":"2",
+			"src": "images/kesennuma_museum_brochure_2.jpg"
+		}  ]
+
+
+
+        },
+
+        {
+
+           "id": "2",
+
+		"title": "Tokyo Fire Department Card Number 18748 Water Rescue Truck",
+
+		"creator/publisher": "Tokyo Fire Department.",
+
+		"description": "A collectible card with a picture of rescue vehicle on one side and useful information, QR code, and illustration on the other side.",
+
+		"subject": "preparedness",
+
+		"location": "Tokyo",
+
+		"date": "", 
+
+		"language": "Japanese",
+			
+		"type": "card",
+			
+		"media_file": [ 
+		{
+			"title":"1",
+			"src": "images/tokyo_fire_dept_truck_card_1.jpg"},
+		{
+			"title":"2",
+			"src": "images/tokyo_fire_dept_truck_card_2.jpg"}
+		]
+
+
+
+        },
+
+		{
+
+			"id": "3",
+
+			"title": "When you feel and Earthquake Jishin? Earthquake Response Guide",
+
+			"creator/publisher": [ "American International Group, Inc.; AIG.", "The Association to Promote the Kansai International Airport Overall Plan.", "Osaka Prefectural Government." ],
+
+			"description": "A pamphlet with earthquake and typhoon response information for English speakers in Japan. Contains translations for helpful phrases, website URLs, QR codes, and train etiquette diagrams..",
+
+			"subject": [ "planning", "preparedness", "response" ],
+
+			"location": "",
+
+			"date": "",
+
+			"language": [ "English", "Japanese" ],
+			
+			"type": "pamphlet",
+			
+			"media_file": [ 
+
+			{
+			"title":"1",
+			"src": "images/earthquake_response_guide_aig_1.jpg"},
+			{
+			"title":"2",
+			"src": "images/earthquake_response_guide_aig_2.jpg"},
+			{
+			"title":"3",
+			"src": "images/earthquake_response_guide_aig_3"},
+			{
+			"title":"4",
+			"src": "images/earthquake_response_guide_aig_4.jpg"},
+			{
+			"title":"5",
+			"src": "images/earthquake_response_guide_aig_5.jpg"},
+			{
+			"title":"6",
+			"src": "images/earthquake_response_guide_aig_6.jpg"},
+			{
+			"title":"7",
+			"src": "images/earthquake_response_guide_aig_7.jpg"}
+			]
+			
+			
+		},
+
+		{
+
+			"id": "4",
+
+			"title": "Itsumo: Plastic Bags: Keep Them Near; Keep You Safe.",
+
+			"creator/publisher": "American International Group, Inc.; AIG.", 
+
+			"description": "A pamphlet detailing the many helpful uses for plastic bags.",
+
+			"subject": [ "preparedness", "response" ],
+
+			"location": "",
+
+			"date": "",
+
+			"language": [ "English", "Japanese" ],
+			
+			"type": "pamphlet",
+			
+			"media_file": [ 
+			{
+			"title":"1",
+			"src": "images/plastic_bag_guide_aig_1.jpg"},
+			{
+			"title":"2",
+			"src": "images/plastic_bag_guide_aig_2.jpg"},
+			{
+			"title":"3",
+			"src": "images/plastic_bag_guide_aig_3.jpg"},
+			{
+			"title":"4",
+			"src": "images/plastic_bag_guide_aig_4.jpg"},
+			{
+			"title":"5",
+			"src": "images/plastic_bag_guide_aig_5.jpg"},
+			{
+			"title":"6",
+			"src": "images/plastic_bag_guide_aig_6.jpg"}
+		]
+			
+			
+
+		},
+
+		{
+
+			"id": "5",
+
+			"title": "Exhibition on Restored Local Documents of Rikuzentakata City Library Local Treasure Restored From a Giant Tsunami.",
+
+			"creator/publisher": "Tokyo Metropolitan Central Library.", 
+
+			"description": "A brochure detailing conservation efforts for unique and irreplacable documents from the library of Rikuzentaka City after the tsunami on March 11, 2011.",
+
+			"subject": [ "library", "conservation" ],
+
+			"location": [ "Tokyo", "Rikuzentakata" ],
+
+			"date": "2015",
+
+			"language": [ "English", "Japanese" ],
+			
+			"type": "brochure",
+			
+			"media_file": [ 
+			{
+			"title":"1",
+			"src": "images/rikuzentakata_library_conservation_1.jpg"},
+			{
+			"title":"2",
+			"src": "images/rikuzentakata_library_conservation_2.jpg"},
+			{
+			"title":"3",
+			"src": "images/rikuzentakata_library_conservation_3.jpg"},
+			{
+			"title":"4",
+			"src": "images/rikuzentakata_library_conservation_4.jpg"}
+			]
+			
+			
+
+		},
+
+		{
+
+			"id": "6",
+
+			"title": "The Great East Japan Earthquake: 2011.3.11 A Moment (Time) to Remember.",
+
+			"creator/publisher": "Minamisanriku Tourism Association.",
+
+			"description": "A brochure detailing the impacts of the tsunami on March 11, 2011, the reconstruction efforts, and future plans for Minamisanriku Town.",
+
+			"subject": [ "reconstruction", "tourism", "restoration" ],
+
+			"location": "Minamisanriku",
+
+			"date": "",
+
+			"language": "English",
+			
+			"type": "brochure",
+			
+			"media_file": [ 
+			{
+			"title":"1",
+			"src": "images/minamisanriku_reconstruction_1.jpg"},
+			{
+			"title":"2",
+			"src": "images/minamisanriku_reconstruction_2.jpg"},
+			{
+			"title":"3",
+			"src": "images/minamisanriku_reconstruction_3.jpg"},
+			{
+			"title":"4",
+			"src": "images/minamisanriku_reconstruction_4.jpg"},
+			{
+			"title":"5",
+			"src": "images/minamisanriku_reconstruction_5.jpg"},
+			{
+			"title":"6",
+			"src": "images/minamisanriku_reconstruction_6.jpg"},
+			{
+			"title":"7",
+			"src": "images/minamisanriku_reconstruction_7.jpg"},
+			{
+			"title":"8",
+			"src": "images/minamisanriku_reconstruction_8.jpg"}
+			]
+			
+			
+
+		},
+
+		{
+
+			"id": "7",
+
+			"title": "Who Can Help? Connecting Survivors, Volunteers and Organizations in Montgomery and Prince George's Counties, Maryland.",
+
+			"creator/publisher": [ "Parkhurst, Mark.", "Miller, Suzanne.", "Wagner-Riston, Melissa.", "Maxwell, Rachel." ],
+
+			"description": "A pamphlet containing information for people Maryland in the event their community is affected by a disaster",
+
+			"subject": [ "planning", "preparedness", "response" ],
+
+			"location": "Maryland, United States",
+
+			"date": "2017",
+
+			"language": "English",
+			
+			"type": "pamphlet",
+			
+			"media_file": [ 
+			{
+			"title":"1",
+			"src": "images/who_can_help_brochure_1.jpg"},
+			{
+			"title":"2",
+			"src": "images/who_can_help_brochure_2.jpg"}
+			]
+			
+			
+
+		},
+
+		{
+
+			"id": "8",
+
+			"title": "untitled",
+
+			"creator/publisher": "Parkhurst, Mark.",
+
+			"description": "A polaroid photograph of a moai statue with eyes.",
+
+			"subject": "tourism",
+
+			"location": "Minamisanriku",
+
+			"date": "2019-3-21",
+
+			"language": "",
+			
+			"type": "photograph", 
+			
+			"media_file": [
+			{
+			"title":"Moai",
+			"src": "images/minamisanriku_moai.jpg"}
+			]
+			
+
+		},
+
+		{
+
+			"id": "9",
+
+			"title": "untitled",
+
+			"creator/publisher": "Parkhurst, Mark.", 
+
+			"description": "A polaroid photograph of an observation platform at a school in Namie Town destory by a tsunami on March 11, 2011. An analog clock is visible on the side stopped at 3:39.",
+
+			"subject": [ "memorial", "tourism" ],
+
+			"location": "Namie",
+
+			"date": "2019-3-19",
+
+			"language": "",
+			
+			"type": "photograph",
+			
+			"media_file": [
+			{
+			"title":"Namie School",
+			"src": "images/namie_school.jpg"}
+			]
+			
+
+		},
+
+		{
+
+			"id": "10",
+
+			"title": "untitled",
+
+			"creator/publisher": "Parkhurst, Mark.",
+
+			"description": "A polaroid photograph of jagged rocks offshore at an ocean-side park.",
+
+			"subject": [ "tourism", "memorial" ],
+
+			"location": "Kesennuma",
+
+			"date": "2019-3-21",
+
+			"language": "",
+			
+			"type": "photograph",
+			
+			"media_file": [
+			{
+			"title":"Kesennuma Park",
+			"src": "images/kesennuma_park.jpg"}
+			]
+
+		}
+
+
+
+    ]
+
+
+}
