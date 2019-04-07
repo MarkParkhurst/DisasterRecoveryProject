@@ -1,1 +1,129 @@
-<h2>Mark Parkhurst</h2>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-balham-dark.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <style>
+        html,
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        body {
+            background: url('images/wave.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+img {
+    image-orientation: from-image;
+}
+    </style>
+</head>
+
+<body>
+
+	<!-- Button trigger modal -->
+<button type="button" id="modalButton" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" style="display:none;">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="imageTitle"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img id="imageSrc" style="height:100%;width:100%;" src="" >
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div style="width:75%;margin-right:auto;margin-left:auto;background-color:gray;padding:50px;margin-top:100px;border:3px solid darkred; border-radius: 4px;">
+        <h1 style="text-align:center;">Planning, Preparing, and Remembering:</h1>
+	<h2 style="text-align:center;">Disaster Resources</h2>
+        <div id="myGrid" style="height: 600px;width:100%" class="ag-theme-balham-dark"></div>
+    </div>
+    <script type="text/javascript" charset="utf-8">
+
+	function setImageModal(title,src){
+	$( "#imageTitle" ).html(title);
+	$( "#imageSrc" ).attr('src',src);
+	$( "#modalButton" ).click();
+	}
+
+        axios.get('data/Final_Project.json')
+            .then(function(response) {
+                console.log('loading data', response);
+                var columnDefs = []
+
+                var rowData = response.data.items;
+
+                Object.keys(rowData[0]).forEach(column => {
+
+		var coldef = {
+                        headerName: column,
+                        field: column,
+                        sortable: true,
+                        filter: true,
+			resizable: true			
+                    };
+
+		if(column === 'media_file') {
+			coldef.cellRenderer = function(params){
+				var links = '';
+				for(var i=0; i<params.value.length; i++){
+					links += '<a onclick="setImageModal(\'' + params.value[i].title + '\',\'' + params.value[i].src + '\')">' + params.value[i].title + '</a>,';
+				}
+				return links;
+			}
+		} else {
+			coldef.tooltipField = column;
+		}
+
+                columnDefs.push(coldef)
+                })
+
+                var gridOptions = {
+                    columnDefs: columnDefs,
+                    rowData: rowData,
+                    suppressMenuHide: true,
+		    enableBrowserTooltips: true
+
+                };
+
+                // lookup the container we want the Grid to use
+                var eGridDiv = document.querySelector('#myGrid');
+
+                // create the grid passing in the div to use together with the columns & data we want to use
+                new agGrid.Grid(eGridDiv, gridOptions);
+                setTimeout(function() {
+                    //gridOptions.columnApi.sizeColumnsToFit();
+                }, 1000);
+
+            })
+            .catch(function(error) {
+                // handle error
+                console.log(error);
+            })
+
+        // let the grid know which columns and what data to use
+    </script>
+</body>
+
+</html>
